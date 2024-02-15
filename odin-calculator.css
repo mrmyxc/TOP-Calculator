@@ -1,0 +1,177 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main
+{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+#calculator
+{
+    display: grid;
+    grid-template: [display] 1fr [buttons] 2fr / 1fr;
+    /* grid-template-areas:  */
+    /* "display" */
+    /* "buttons"; */
+    row-gap: 10px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.button
+{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(141, 118, 76);
+    width: 100%;
+    height: 100%;
+}
+
+
+.button:hover
+{
+    background-color: brown;
+    transition-duration: 200ms;
+}
+
+
+#top-section
+{
+    background-color: blue;
+    grid-area: "display";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display
+{
+    width: 95%;
+    height: 75%;
+    background-color: cadetblue;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 5em;
+}
+
+#bottom-section
+{
+    background-color: blueviolet;
+    grid-area: "buttons";
+    display: grid;
+    grid-template-areas: 
+    "b9 b8 b7 ba"
+    "b6 b5 b4 bs"
+    "b3 b2 b1 bd"
+    "bf b0 bl bm"
+    "bc bc be be";
+    width: 99%;
+}
+
+#button-7
+{
+    grid-area: "b7";
+}
+
+#button-8
+{
+    grid-area: "b8";
+}
+
+#button-9
+{
+    grid-area: "b9";
+}
+
+#button-divide
+{
+    grid-area: "bd";
+}
+
+#button-4
+{
+    grid-area: "b4";
+}
+
+#button-5
+{
+    grid-area: "b5";
+}
+
+#button-6
+{
+    grid-area: "b6";
+}
+
+#button-multiply
+{
+    grid-area: "bm";
+}
+
+#button-1
+{
+    grid-area: "b1";
+}
+
+#button-2
+{
+    grid-area: "b2";
+}
+
+#button-3
+{
+    grid-area: "b3";
+}
+
+#button-add
+{
+    grid-area: "ba";
+}
+
+#button-0
+{
+    grid-area: "b0";
+}
+
+#button-clear
+{
+    grid-area: "bc";
+    grid-column: span 2;
+}
+
+#button-equal
+{
+    grid-area: "be";
+    grid-column: span 2;
+}
+
+#button-subtract
+{
+    grid-area: "bs";
+}
+
+#button-backspace
+{
+    grid-area: "bf";
+}
+
+#button-decimal
+{
+    grid-area: "bl";
+}
+
